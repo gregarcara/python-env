@@ -3,8 +3,8 @@ FROM python:2-onbuild
 COPY ./ /src
 WORKDIR /src
 
-RUN virtualenv .
-RUN ./bin/python setup.py install
+RUN virtualenv myenv
+RUN myenv/bin/python setup.py install
 
 EXPOSE 8080
-CMD ["./python", "app.py"]
+CMD ["myenv/bin/python", "app.py"]
