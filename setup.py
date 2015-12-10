@@ -24,8 +24,8 @@ setup(
         'Topic :: Internet',
         'Topic :: Utilities'
     ],
-    tests_require=read('./requirements.pypm'),
-    install_requires=read('./requirements.pypm'),
+    tests_require=read('./requirements.txt'),
+    install_requires=read('./requirements.txt'),
     test_suite='nose.collector',
     include_package_data=True,
     packages=find_packages(exclude=['*.tests']))
