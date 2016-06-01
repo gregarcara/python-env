@@ -1,2 +1,4 @@
 applications:
 - name: python-env
+  memory: 100M
+  disk_quota: 100M
